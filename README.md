@@ -7,12 +7,4 @@
 | :exclamation: Important Note            |
 |-----------------------------------------|
 
-## Please fill in your project documentation in this README.md file 
-
-
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
-
----
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+This project is for testing rram-based building blocks and the programming circuit using for eFPGA.
