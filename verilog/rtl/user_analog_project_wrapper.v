@@ -122,8 +122,8 @@ module user_analog_project_wrapper (
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
-//user_analog_proj_example mprj (
-rram_LUT2 mprj (
+user_analog_proj_example mprj (
+//rram_LUT2 mprj (
     `ifdef USE_POWER_PINS
         .vdda1(vdda1),  // User area 1 3.3V power
         .vdda2(vdda2),  // User area 2 3.3V power
