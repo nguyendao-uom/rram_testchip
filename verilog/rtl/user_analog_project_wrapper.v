@@ -121,20 +121,40 @@ module user_analog_project_wrapper (
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
+M1M2_C_CDNS_6413189638311 cnt_ins1 (); 
+M1M2_C_CDNS_6413189638314 cnt_ins2 ();
+M1M2_C_CDNS_6413189638316 cnt_ins3 ();
+M1M2_C_CDNS_641318963833 cnt_ins4 ();
+M1M2_C_CDNS_641318963838 cnt_ins5 ();
+M2M3_C_CDNS_641318963830 cnt_ins6 ();
+M2M3_C_CDNS_6413189638310 cnt_ins7 ();
+M2M3_C_CDNS_6413189638313 cnt_ins8 ();
+M2M3_C_CDNS_6413189638315 cnt_ins9 ();
+M2M3_C_CDNS_641318963832 cnt_ins10();
+M2M3_C_CDNS_641318963835 cnt_ins11();
+M2M3_C_CDNS_641318963837 cnt_ins12();
+M3M4_C_CDNS_641318963831 cnt_ins13();
+M3M4_C_CDNS_6413189638312 cnt_ins14();
+M3M4_C_CDNS_641318963834 cnt_ins15();
+M3M4_C_CDNS_641318963836 cnt_ins16();
+M3M4_C_CDNS_641318963839 cnt_ins17();
+
 
 user_analog_proj_example mprj (
 //rram_LUT2 mprj (
-    `ifdef USE_POWER_PINS
-        .vdda1(vdda1),  // User area 1 3.3V power
-        .vdda2(vdda2),  // User area 2 3.3V power
-        .vssa1(vssa1),  // User area 1 analog ground
-        .vssa2(vssa2),  // User area 2 analog ground
-        .vccd1(vccd1),  // User area 1 1.8V power
-        .vccd2(vccd2),  // User area 2 1.8V power
-        .vssd1(vssd1),  // User area 1 digital ground
-        .vssd2(vssd2),  // User area 2 digital ground
-    `endif
+//    `ifdef USE_POWER_PINS
+//        .vdda1(vdda1),  // User area 1 3.3V power
+//        .vdda2(vdda2),  // User area 2 3.3V power
+//        .vssa1(vssa1),  // User area 1 analog ground
+//        .vssa2(vssa2),  // User area 2 analog ground
+//        .vccd1(vccd1),  // User area 1 1.8V power
+//        .vccd2(vccd2),  // User area 2 1.8V power
+//        .vssd1(vssd1),  // User area 1 digital ground
+//        .vssd2(vssd2),  // User area 2 digital ground
+//    `endif
 
+    .vccd1(vccd1),  // User area 1 1.8V power
+    .vssd1(vssd1),  // User area 1 digital ground
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
 
